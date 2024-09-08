@@ -12,7 +12,7 @@ class HelloWorldTestCase(unittest.TestCase):
         response = self.app.get("/")
         
         # Assert that the response data matches the expected output
-        self.assertEqual(response.data, b"<p>Hello, World!</p>")
+        self.assertEqual(response.data, b"<p>Hello, New World!</p>")
         
         # Assert that the status code is 200 (OK)
         self.assertEqual(response.status_code, 200)
